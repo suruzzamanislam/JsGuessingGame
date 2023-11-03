@@ -1,0 +1,142 @@
+
+
+.container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.box{
+    background: linear-gradient(9deg, rgb(195, 73, 73),green);
+    padding: 20px;
+    font-size: 20px;
+    width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 0 500px 50px aquamarine;
+    position: relative;
+    overflow: hidden;
+}
+.title{
+    text-align: center;
+    color: palevioletred;
+    text-shadow: 3px 3px 10px red;
+}
+form label{
+    font-size: 25px;
+    width: 45%;
+}
+
+#input{
+    width: 45%;
+    font-size: 25px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+
+}
+.btnDiv{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+.submit{
+    font-size: 18px;
+    padding: 5px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background-color: chartreuse;
+    color:red;
+    font-weight: bold;
+    cursor: pointer;
+}
+.sub{
+    box-shadow: 0 0 25px orange;
+}
+.result{
+    text-align: center;
+    margin-top: 40px;
+    font-weight: bold;
+}
+
+span{
+    position: absolute;
+}
+.sp1{
+
+    left: -100%;
+    top: 0;
+    height: 5px;
+    width: 100%;
+    background: linear-gradient(90deg,transparent, rgb(234, 39, 39));
+    animation: sp1 1.5s linear infinite;
+}
+@keyframes sp1{
+    0%{
+        left: -100;
+    }
+    50%,100%{
+        left: 100%;
+    }
+}
+.sp2{
+
+    right: 0;
+    top: -100%;
+    height: 100%;
+    width: 5px;
+    background: linear-gradient(90deg,transparent, rgb(43, 26, 44));
+    animation: sp2 1.5s linear infinite;
+    animation-delay: .35s;
+}
+@keyframes sp2{
+    0%{
+        top: -100;
+    }
+    50%,100%{
+        top: 100%;
+    }
+}
+.sp3{
+
+    right: -100%;
+    bottom: 0%;
+    height: 5px;
+    width: 100%;
+    background: linear-gradient(90deg,transparent, rgb(15, 187, 29));
+    animation: sp3 1.5s linear infinite;
+    animation-delay: .65s;
+}
+@keyframes sp3{
+    0%{
+        right: -100%;
+    }
+    50%,100%{
+        right: 100%;
+    }
+}
+
+.sp4{
+
+    left: 0;
+    bottom: -100%;
+    height: 100%;
+    width: 5px;
+    background: linear-gradient(90deg,transparent, black);
+    animation: sp4 1.5s linear infinite;
+    animation-delay: 1s;
+}
+@keyframes sp4{
+    0%{
+        bottom: -100;
+    }
+    50%,100%{
+        bottom: 100%;
+    }
+}
+
+
